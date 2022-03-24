@@ -3,7 +3,6 @@ const bodyParser = require('body-parser');
 const bcrypt = require('bcrypt-nodejs');
 const cors = require('cors');
 const knex = require('knex');
-const skase = 3;
 
 const register = require('./controllers/register');
 const signin = require('./controllers/signin');
@@ -13,7 +12,7 @@ const image = require('./controllers/image');
 const db = knex({
   client: 'pg',
   connection: {
-    host : '127.0.0.1',
+    host : 'postgresql-fitted-28432',
     user : 'artem',
     port: 5432,
     password : '',
