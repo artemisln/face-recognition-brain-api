@@ -4,7 +4,7 @@
   "main": "script.js",
   "scripts": {
     "start": "serve -s build",
-    "start:dev": "nodemon server.js"
+    "start:dev": "react-scripts start"
   },
   "dependencies": {
     "bcrypt-nodejs": "^0.0.3",
